@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>Ticket</title>
+    <meta name = viewport content = "width = device-width, initial-scale = 1.0">
+    <link rel = "stylesheet" type = "text/css" href ="static\css\style.css"> 
+    <style>
+        #customers {
+          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+  
+       #customers td, #customers th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+  
+        #customers th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color:rgb(207, 206, 123);
+          color: white;
+          }
+    </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <label class = "logo">Your Ticket is here</label>
+        <ul>
+            <li><a href = "home">Home</a></li>
+        </ul>
+    </nav>
+</header>
+<table id="customers">
+  <tr>
+    <th>Name</th>
+    <th>{{name}}</th>
+  </tr>
+  <tr>
+    <th>Phone</th>
+    <th>{{phone}}</th>
+  </tr>
+  <tr>
+    <th>Slot</th>
+    <th>{{slot}}</th>
+  </tr>
+</table>
+
+</body>
+</html>

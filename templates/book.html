@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Home</title>
+        <meta name = viewport content = "width = device-width, initial-scale = 1.0">
+        <link rel = "stylesheet" type = "text/css" href ="static\css\style.css"> 
+        <link rel = "stylesheet" type = "text/css" href ="static\css\form.css"> 
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+                <label class = "logo">Book Your Ticket Here</label>
+                <ul>
+                    <li><a href = "home">Home</a></li>
+                    <li><a href = "admin">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div>
+                <form action="{{url_for('get_ticket')}}">
+                  <label for="username">Name</label>
+                  <input type="text" id="fname" name="username" placeholder="Your name..">
+              
+                  <label for="phone">Phone</label>
+                  <input type="text" id="lname" name="phone" placeholder="Your last name..">
+              
+                  <label for="slot">Slot</label>
+                  <select id="slot" name="slot">
+                    <option value="s1"><b>Slot 1 [09:00]</b> </option>
+                    <option value="s2"><b>Slot 2 [13:00]</b></option>
+                    <option value="s3"><b>Slot 3 [17:00]</b></option>
+                  </select>
+                
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
